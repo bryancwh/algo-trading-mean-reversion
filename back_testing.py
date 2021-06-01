@@ -19,7 +19,7 @@ def backtest_dataframe(df):
                 buy_price = close
                 position = 1
                 df.at[i, 'buy_date'] = date
-#                print(f"Buying at {str(buy_price)} on {str(date)}")
+                print(f"Buying at {str(buy_price)} on {str(date)}")
 
         # Sell action
         elif (df["signal"][i] == -1):
@@ -28,7 +28,7 @@ def backtest_dataframe(df):
                 bought = 0
                 position = 0
                 df.at[i, 'sell_date'] = date
-#                print(f"Selling at {str(sell_price)} on {str(date)}")
+                print(f"Selling at {str(sell_price)} on {str(date)}")
 
                 # Get percentage change of trade
                 pc = (sell_price/buy_price-1)*100
@@ -72,6 +72,7 @@ def backtest_dataframe(df):
     else:
         win_rate = 0
 
+    print()
     print('Evaluation Metrics:')
     print('-----------------------------------')
     print(f"Number of Trades: {ng+nl}")
