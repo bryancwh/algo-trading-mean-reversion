@@ -1,1 +1,1 @@
-# algo-trading-mean-reversion
+# Algorithmic Trading: Mean Reversion using Python
