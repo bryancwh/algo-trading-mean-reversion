@@ -15,6 +15,3 @@ pip install -r requirements.txt
 * Select your desired Ticker Symbol.
 * Select your desired start and end date for backtest.
 * Run the program.
-
-
-*Note - Alpha Vantage claims you can make 500 requests per day.*
